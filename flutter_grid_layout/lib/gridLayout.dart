@@ -55,17 +55,18 @@ class GridLayout extends StatelessWidget {
 
   Column getCardByTitle(String title) {
     String img = "";
-    if (title == 'Calendar')
-      img = 'assets/calendar.png';
-    else if (title == 'Family')
-      img = 'assets/family.png';
-    else if (title == 'Friends')
-      img = 'assets/friends.png';
-    else if (title == 'Lovely')
-      img = 'assets/lovely_time.png';
-    else if (title == 'Me')
-      img = 'assets/me_time.png';
-    else if (title == 'Team') img = 'assets/team_time.png';
+    if (title == "Calendar")
+      img = "assets/calendar.png";
+    else if (title == "Family")
+      img = "assets/family_time.png";
+    else if (title == "Friends")
+      img = "assets/friends.png";
+    else if (title == "Lovely")
+      img = "assets/lovely_time.png";
+    else if (title == "Me")
+      img = "assets/me_time.png";
+    else 
+      img = "assets/team_time.png";
 
     return Column(
       mainAxisAlignment: MainAxisAlignment.center,
